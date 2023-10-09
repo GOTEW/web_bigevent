@@ -34,7 +34,7 @@ $(function() {
     var date = { username: $('#form_reg [name=username]').val(), password: $('#form_reg [name=password]').val() };
     $('#form_reg').on('submit', function(e) {
             e.preventDefault()
-            $.POST('http://ajax.frontend.itheima.net/api/reguser', date, function(res) {
+            $.POST('http://www.liulongbin.top:3007/api/reguser', date, function(res) {
                 if (res.status !== 0) {
                     return layer.msg(e.message);
                 }
